@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body base styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main container */
+.container {
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Counter box styling */
+.counter-box {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Title and subtitle */
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #777;
+}
+
+/* Display for the current count */
+.count {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #1e90ff;
+  transition: color 0.3s ease;
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* General button styles */
+.btn {
+  flex: 1 1 30%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Reset button styling */
+.reset {
+  background-color: #ff4757;
+}
+
+/* Hover effect */
+.btn:hover {
+  background-color: #0066cc;
+  transform: scale(1.05);
+}
+
+/* Reset button hover */
+.reset:hover {
+  background-color: #e84118;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .count {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    flex: 1 1 100%;
+  }
+}
